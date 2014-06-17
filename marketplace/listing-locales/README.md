@@ -2,29 +2,29 @@
 
 ## Add, remove, and set a default locale
 
-* You must select one default locale; to do this, suffix the folder-name with `-default`; a Japanese default locale would have the folder name `ja-default`.
-* To enable a locale, create a new `.md` file that has the locale code as a name (see Appendix for a list of valid locales); a German locale would be named `de.md`
+* To add a new locale, create a new `.md` file that has the locale code as a name (see Appendix for a list of valid locales); an English locale would be named `en.md`
+* You must set one locale as a default; to do this, give the file name a `-default` suffix; a Japanese default locale would have the file name `ja-default.md`.
 
-## Editing locale
+## Editing app listing inside each locale
 
-* You can modify these fields:
-  1. Name
-  2. Description
-  3. Release notes (optional)
-  4. Homepage
-  5. Support homepage
-  6. Support email
-  7. Privacy policy
-* Every field above, except for release notes, is mandatory for a default locale
-* Any other locale `.md` must contain at least 1 field
-* Any field that’s not filled will fallback to the content found under the default locale’s `.md`
+* You can modify these fields. Each modified item will change your app listing page:
+  * Name
+  * Description
+  * Release notes (optional)
+  * Homepage
+  * Support homepage
+  * Support email
+  * Privacy policy
+* Your default locale must contain every one of the field above, except for Release notes
+* Any other locale `.md` can contain any number of field
+* Any field on any other locale that’s not filled will fallback to the content found under the default locale’s `.md`
 
 ## Our recommendation
 
 * Update the `Release notes` for every new version
 * Localize the `Description` to the language of every country you support
 
-## Appendix: a list of valid locales
+## Appendix: valid locales
 
 * bg - Bulgarian
 * bn-bd - Bengali (Bangladesh)
