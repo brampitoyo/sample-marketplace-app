@@ -5,8 +5,9 @@
 
 ## Content
 
-* categories-ratings.md
-* ratings.md
 * /icons
 * /listing-locales
 * /screenshots-videos
+* README.md (this file)
+* categories-ratings.md
+* ratings.md
