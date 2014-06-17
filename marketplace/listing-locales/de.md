@@ -1,4 +1,4 @@
-# de | Locale
+# de | Locales and listing
 
 ## Description
 

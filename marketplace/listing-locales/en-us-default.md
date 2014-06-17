@@ -1,4 +1,4 @@
-# en-us | Locale
+# en-us | Locales and listing
 
 ## Name
 

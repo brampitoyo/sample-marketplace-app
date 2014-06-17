@@ -1,4 +1,4 @@
-# fr | Locale
+# fr | Locales and listing
 
 ## Description
 

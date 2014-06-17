@@ -1,4 +1,4 @@
-# it | Locale
+# it | Locales and listing
 
 ## Description
 
