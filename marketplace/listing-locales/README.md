@@ -2,7 +2,7 @@
 
 ## Add, remove, and set a default locale
 
-* To add a new locale, create a new `.md` file that has the locale code as a name (see Appendix for a list of valid locales); an English locale would be named `en.md`
+* To add a new locale, create a new `.md` file that has the locale code as a name (see Appendix for a list of valid locales); an American English locale would be named `en-us.md`
 * You must set one locale as a default; to do this, give the file name a `-default` suffix; a Japanese default locale would have the file name `ja-default.md`.
 
 ## Editing app listing inside each locale
@@ -15,7 +15,7 @@
   * ## Support homepage
   * ## Support email
   * ## Privacy policy
-* Your default locale `.md` must contain every one of the field above, except for Release notes
+* Your default locale `.md` **must contain every one of the field above**, except for Release notes
 * Any other locale `.md` can contain any number of field
 * Any field on any other locale that’s not filled will fallback to the content found under the default locale’s `.md`
 
