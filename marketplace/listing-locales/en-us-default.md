@@ -2,11 +2,15 @@
 
 ## Name
 
-"WikiHow" -> Firefox OS homescreen will display up to 11 characters
+> Firefox OS homescreen will display up to 11 characters
+
+"WikiHow"
 
 ## Description
 
-"Have you ever wondered How to Tie a Tie, How to get Six Pack Abs, How to Know if a Guy Likes You, or How to Delete a Facebook Account? With over 150,000 articles, step-by-step photos and illustrations, and instructional videos, wikiHow will help you answer your questions these topics and many more. Learn how to do anything on-the-go with the wikiHow mobile app for Mozilla." -> No longer than 1000 characters
+> No longer than 1000 characters
+
+"Have you ever wondered How to Tie a Tie, How to get Six Pack Abs, How to Know if a Guy Likes You, or How to Delete a Facebook Account? With over 150,000 articles, step-by-step photos and illustrations, and instructional videos, wikiHow will help you answer your questions these topics and many more. Learn how to do anything on-the-go with the wikiHow mobile app for Mozilla."
 
 ## Release notes
 
@@ -14,15 +18,15 @@
 
 ## Homepage
 
-"http://wikihow.com/" -> Must be a URL
+"http://wikihow.com/"
 
 ## Support homepage
 
-"http://forums.wikihow.com/" -> Must be a URL
+"http://forums.wikihow.com/"
 
 ## Support email
 
-"support@wikihow.com" -> Must be an email
+"support@wikihow.com"
 
 ## Privacy policy
 

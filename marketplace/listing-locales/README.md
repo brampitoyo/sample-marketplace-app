@@ -7,15 +7,15 @@
 
 ## Editing app listing inside each locale
 
-* You can modify these fields. Each modified item will change your app listing page:
-  * Name
-  * Description
-  * Release notes (optional)
-  * Homepage
-  * Support homepage
-  * Support email
-  * Privacy policy
-* Your default locale must contain every one of the field above, except for Release notes
+* Inside each `.md` file, you can add and modify these fields:
+  * ## Name
+  * ## Description
+  * ## Release notes
+  * ## Homepage
+  * ## Support homepage
+  * ## Support email
+  * ## Privacy policy
+* Your default locale `.md` must contain every one of the field above, except for Release notes
 * Any other locale `.md` can contain any number of field
 * Any field on any other locale that’s not filled will fallback to the content found under the default locale’s `.md`
 
