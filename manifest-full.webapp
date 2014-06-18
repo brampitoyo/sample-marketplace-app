@@ -1,0 +1,172 @@
+// This manifest has been organized so fields would appear in logical, rather than alphabetical, order
+//
+// We have two options:
+//
+// 1) Map every possible information on the manifest
+//    Pros: One file to rule them all
+//    Cons: Manifest becomes non-standard/non-spec, and may not be able to be ingested by other marketplaces
+//
+// 2) Keep manifest the same way, but put all the other app information in its own folder
+//    Pros: Clean division between what’s on the manifest and what isn’t
+//    Cons: There are more than one file to manage
+//
+// This manifest represents option 1. It’s a manifest that contains everything.
+
+{
+
+  // Name, description, default locale and categories
+    
+  "name": "Puzzle",
+  
+  "description": "Have you ever wondered How to Tie a Tie, How to get Six Pack Abs, How to Know if a Guy Likes You, or How to Delete a Facebook Account? With over 150,000 articles, step-by-step photos and illustrations, and instructional videos, wikiHow will help you answer your questions these topics and many more. Learn how to do anything on-the-go with the wikiHow mobile app for Mozilla.",
+  
+  "release_notes": "", // New
+  
+  "default_locale": "en",
+  
+  "categories": [ // New
+    "productivity", "business"
+  ]
+  
+  // Version, platforms and screen sizes
+  
+  "version": "1.0",
+  
+  "platforms_sizes": [ // Platforms and screen sizes are combined into one, for simplicity
+    "firefox_os_mobile", "firefox_os_tablet" // Other possible values: "android_mobile", "android_tablet" and "desktop"
+  ]
+
+  // Icons and screenshots
+  
+  "icons": {
+    "16": "/icons/16.png",
+    "32": "/icons/32.png",
+    "256": "/icons/256.png"
+  },
+  
+  "screenshots": {
+  
+    "mobile": {
+      "1": "/screenshots/mobile-1.png",
+      "2": "/screenshots/mobile-2.png",
+      "3": "/screenshots/mobile-video-1.webm"
+    },
+    
+    "tablet": {
+      "1": "/screenshots/tablet-1.png",
+      "2": "/screenshots/tablet-2.png",
+      "3": "/screenshots/tablet-video-2.webm"
+    }
+    
+  },
+  
+  // Contact Information
+  
+  "developer": {
+    "name": "Puzzle Corporation",
+    "url": "http://puzzle.com"  // Developer URL currently maps to nothing, we should map it to homepage
+  },
+  
+  "support": { // New
+    "url": "http://support.puzzle.com",
+    "email": "support@puzzle.com"
+  },
+  
+  // Privacy policy
+    
+  "privacy_policy": "", // New
+  
+  // Locales
+  
+  "locales": {
+
+    "de": {
+      "description": "Haben Sie sich jemals gefragt, wie man eine Krawatte, Wie Six Pack Abs bekommen, Wie wissen, ob ein Mann dich mag, oder wie man einen Facebook-Account löschen binden? Mit mehr als 150.000 Artikel, Schritt-für-Schritt-Fotos und Illustrationen und Lehr-Videos, werden wikiHow Ihnen helfen, Ihre Fragen über diese Themen und viele mehr beantworten. Erfahren Sie, wie alles on-the-go mit der wikiHow Mobile App für Mozilla zu tun."
+    },
+        
+    "fr": {
+      "description": "Avez-vous jamais demandé comment attacher une cravate, Comment obtenir les Abdominaux, Comment savoir si un mec vous aime, ou Comment supprimer un compte Facebook? Avec plus de 150 000 articles, étape par étape les photos et illustrations, et des vidéos pédagogiques, wikiHow vous aidera à répondre à vos questions ces sujets et bien d'autres. Apprenez à faire quoi que ce soit sur ​​le pouce avec l'application mobile wikiHow pour Mozilla."
+    },
+    
+    "it": {
+      "description": "Vi siete mai chiesti come legare un legame, Come ottenere Six Pack Abs, Come sapere se un ragazzo piaci, o Come eliminare un account Facebook? Con oltre 150.000 articoli, step-by-step foto e illustrazioni e video didattici, wikiHow vi aiuterà a rispondere alle vostre domande questi argomenti e molti altri. Imparare a fare qualsiasi cosa on-the-go con l'app mobile wikiHow per Mozilla."
+    }
+    
+  },
+  
+  // Ratings
+  
+  "ratings": { // Get a ratings here: https://www.globalratings.com/IARCPRODRating/
+    "submission_id": "23",
+    "security_code": "abcd1234"
+  },
+  
+  // Price and availability
+  
+  "price": "tier1", // New
+
+  "availability": "global", // New - example of global availability
+  
+  "availability": {
+    "colombia", "brazil", "mexico" // example of specific country availability
+  },
+  
+  "availability": {
+    "colombia": [ "telefonica", "amx" ], // example of specific operator availability
+    "brazil": [ "telefonica" ],
+    "mexico": [ "amx" ]
+  },
+  
+  // In-app payment and products - New section
+
+  "in_app": {
+  
+    "payment": "yes",
+    
+    "products" {
+    
+      "gems": {
+        "name": "50 Gems",
+        "price": "tier1"
+      },
+      
+      "life" {
+        "name": "Extra Lives",
+        "price": "tier2"
+      },
+      
+      "unicorn": {
+        "name": "Magical Unicorn",
+        "price": "tier3"
+      }
+      
+    }
+    
+  },
+  
+  // Payment account - New section
+  
+  "bango": { // Register for an account here: http://bango.com/
+    "username": "john.doe",
+    "token": "ot9vob7char5ap3hyt6dov1wal4caic8i4dru3ok3cac2cat4e"
+  },
+  
+  "provider_name": { // Register for an account here: http://providername.com/
+    "username": "john.doe",
+    "token": "rark7yez8ju3wyk0jak3gav3hec6oij4riemth1ag7he7of6un"
+  }
+
+  // Technical information
+  
+  "orientation": "landscape",
+  
+  "fullscreen": "true",
+
+  "permissions": {}, // Maybe this is where technical features should go?
+
+  "installs_allowed_from": [
+    "https://marketplace.firefox.com"
+  ],
+  
+  "launch_path": "/index.html",
+}

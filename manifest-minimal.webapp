@@ -1,0 +1,15 @@
+// This is an example of a very minimal manifest.
+// When this manifest is used, every information must be added into its own folder.
+{
+  "installs_allowed_from": [
+    "https://marketplace.firefox.com",
+    "https://marketplace-dev.allizom.org"
+  ],
+  "version": "1.0",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "Mozilla Labs"
+  },
+  "orientation": "landscape",
+  "fullscreen": "true"
+}
