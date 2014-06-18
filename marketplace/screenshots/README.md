@@ -1,6 +1,6 @@
-# Screenshots and videos
+# Screenshots (and videos)
 
-* To enable a screen size, create a folder with the appropriate name: either `mobile`, `tablet`, or `desktop`
+* To enable a screen size, create a folder with the appropriate name: either `/mobile`, `/tablet`, or `/desktop`
 * Once created, each folder must have a minimum of 3 image or video inside in order for it to be published on Firefox Marketplace
 
 # `/mobile`
@@ -8,7 +8,7 @@
 ## Platform support
 
 * Once your app is made available for mobile, it will automatically support Firefox OS phone
-* To enable support for Android tablet, rename the filename `android-disabled` to `android-enabled`
+* Support for Android mobile is automatically disabled. To enable support for Android mobile, create a blank filename called `android.enable`
 
 ## Dimensions
 
@@ -21,7 +21,7 @@
 ## Platform support
 
 * Once your app is made available for tablet, it will automatically support Firefox OS tablet
-* To enable support for Android tablet, rename the filename `android-disabled` to `android-enabled`
+* Support for Android tablet is automatically disabled. To enable support for Android tablet, create a blank filename called `android.enable`
 
 ## Dimensions
 
