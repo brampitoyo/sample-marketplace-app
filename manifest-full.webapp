@@ -1,16 +1,6 @@
-// This manifest has been organized so fields would appear in logical, rather than alphabetical, order
-//
-// We have two options:
-//
-// 1) Map every possible information on the manifest
-//    Pros: One file to rule them all
-//    Cons: Manifest becomes non-standard/non-spec, and may not be able to be ingested by other marketplaces
-//
-// 2) Keep manifest the same way, but put all the other app information in its own folder
-//    Pros: Clean division between what’s on the manifest and what isn’t
-//    Cons: There are more than one file to manage
-//
-// This manifest represents option 1. It’s a manifest that contains everything.
+// This is an example of a very full manifest.
+// When this manifest is used, only icons and screenshots will need to be added into a folder.
+// Everything else, from locale to payment information, is managed in this file.
 
 {
 
@@ -39,23 +29,23 @@
   // Icons and screenshots
   
   "icons": {
-    "16": "/icons/16.png",
-    "32": "/icons/32.png",
-    "256": "/icons/256.png"
+    "16": "/marketplace/icons/16.png",
+    "32": "/marketplace/icons/32.png",
+    "256": "/marketplace/icons/256.png"
   },
   
   "screenshots": {
   
     "mobile": {
-      "1": "/screenshots/mobile-1.png",
-      "2": "/screenshots/mobile-2.png",
-      "3": "/screenshots/mobile-video-1.webm"
+      "1": "/marketplace/screenshots/mobile-1.png",
+      "2": "/marketplace/screenshots/mobile-2.png",
+      "3": "/marketplace/screenshots/mobile-video-1.webm"
     },
     
     "tablet": {
-      "1": "/screenshots/tablet-1.png",
-      "2": "/screenshots/tablet-2.png",
-      "3": "/screenshots/tablet-video-2.webm"
+      "1": "/marketplace/screenshots/tablet-1.png",
+      "2": "/marketplace/screenshots/tablet-2.png",
+      "3": "/marketplace/screenshots/tablet-video-2.webm"
     }
     
   },
@@ -68,7 +58,7 @@
   },
   
   "support": { // New
-    "url": "http://support.puzzle.com",
+    "url": "http://support.puzzle.com/",
     "email": "support@puzzle.com"
   },
   
@@ -162,11 +152,30 @@
   
   "fullscreen": "true",
 
-  "permissions": {}, // Maybe this is where technical features should go?
+  "permissions": {  // The minimum requirements fields map to here
+  
+    "geolocation": {
+      "description": "Required for local leaderboards" 
+    }
+    
+    "audio": {
+      "description": "Required for delivering sounds"
+    }
+    
+    "web_payment" {
+      "description": "Required for in-app payments"
+    }
+    
+    "camera" {
+      "description": "Required for taking pictures of achievements"
+    }
+    
+  },
 
   "installs_allowed_from": [
     "https://marketplace.firefox.com"
   ],
   
   "launch_path": "/index.html",
+  
 }

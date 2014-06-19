@@ -19,7 +19,7 @@ Support for in-app payment is automatically disabled. To enable it:
 # In-app products
 
 * Once you enable in-app payment, create a new folder called `in-app-products`
-* Inside this folder, create a folder for every in-app product you create; an in-app product called “Magical Unicorn” might have a folder that’s named `unicorn`, `magical-unicorn` or almost anything.
+* Inside this folder, create a folder for every in-app product you create; an in-app product called “Magical Unicorn” might have a folder that’s named `unicorn`, `magical-unicorn` or almost anything
 * Inside each in-app product, you must put a `.price` file with the appropriate tier
 
 # Payment accounts
@@ -27,14 +27,14 @@ Support for in-app payment is automatically disabled. To enable it:
 * If your app has a price, it must also have at least one payment account
 * To add a new payment account, create a new folder called `payment-accounts`
 * Inside this folder, create a new `.provider` file (this file will __not__ be blank) named after a payment account provider you signed up for (see Appendix for a list of valid payment providers); if your app is signed up for Bango, you would create a `bango.provider` file
-* These `.provider` files are not blank. Inside each file, you must provide a "username" and "token" values
+* These `.account` files are __not__ blank. Inside each file, you must provide a "username" and "token" values
 
 # Appendices
 
 ## List of valid price file names
 
-* free.price
-* tier0.price - $0.00 (use this tier if your app is only going to be made free _for a period of time_)
+* `free.price`
+* `tier0.price` - $0.00 (use this tier if your app is only going to be made free _for a period of time_)
 
 ### Only supports carrier billing
 * `tier1.price` - $0.10
