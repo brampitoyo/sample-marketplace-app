@@ -1,65 +1,61 @@
 {
 
-  "name": "App name; 11 characters will make sure that the app name will appear in full in the Firefox OS homescreen",
+  "name": "REQUIRED. App name; 11 characters will make sure that the app name will appear in full in the Firefox OS homescreen",
   
   "developer": {
-    "name": "Puzzle Corporation",
-    "url": "http://puzzle.com"  // Developer URL currently maps to nothing, we should map it to homepage
+    "name": "REQUIRED. Developer name, 50 characters maximum",
+    "url": "REQUIRED. http://"
   },
   
-  "description": "App description, 500 characters maximum",
+  "description": "REQUIRED. App description, 500 characters maximum",
   
-  "default_locale": "What’s the default language that your app description is written in? Usually, you write in English, so the value is: en"
+  "release_notes": "OPTIONAL. Erase section if unnecessary"
   
-  "locales": {
+  "default_locale": "REQUIRED. What’s the default language that your app description is written in? Usually, you write in English, so the value is: en",
+  
+  "locales - OPTIONAL. Erase section if unnecessary.": {
 
-    "this is your first locale. Code reference: German is de, French is fr, Italian is it, and so on": {
-      "description": "This is your localized app description, 500 characters maximum. Erase this property when not needed."
+    "Locale code goes here. German: de, French: fr, Italian: it, and so on": {
+      "description": "Localized app description, 500 characters maximum"
+      "release_notes": "OPTIONAL. Erase section if unnecessary"
     },
         
-    "This is your second locale": {
-      "description": "This is your localized app description, 500 characters maximum. Erase this property when not needed."
+    "Second locale code goes here": {
+      "description": "Localized app description, 500 characters maximum"
+      "release_notes": "OPTIONAL. Erase section if unnecessary"
     },
         
   },
   
   "icons": {
-    "64":  "Relative URL to 64x64 icon image file. For example: /assets/img/icon-64.png",
-    "128": "Relative URL to 128x128 icon image file. For example: /assets/img/icon-128.png",
-    "256": "Relative URL to 256x256 icon image file. For example: /assets/img/icon-256.png",
+    "64":  "REQUIRED. Relative URL to 64x64 icon image file. For example: /assets/img/icon-64.png",
+    "128": "REQUIRED. Relative URL to 128x128 icon image file. For example: /assets/img/icon-128.png",
+    "256": "REQUIRED. Relative URL to 256x256 icon image file. For example: /assets/img/icon-256.png",
   }
 
   "installs_allowed_from": [
-    "Replace this text with a URL where user is allowed to install your app. For example: https://marketplace.firefox.com",
-    "More URLs may be added if your app can be made available somewhere else. If you’re not declaring any more URL, delete this value"
+    "REQUIRED. Replace this text with a URL where user is allowed to install your app. For example: https://marketplace.firefox.com",
+    "OPTIONAL. More URLs may be added here if your app can be made available somewhere else."
   ],
 
-  "version": "App version number, for example: 1.0, 0.32, 2.5",
+  "version": "REQUIRED. App version number, for example: 1.0, 0.32, 2.5",
 
-  "launch_path": "The path that is loaded when the app starts. For most apps, it’s: /index.html",
+  "launch_path": "REQUIRED. The path that is loaded when the app starts. For most apps, it’s: /index.html",
 
   "orientation": [
-    "Orientation can be locked to either portrait or landscape. If your app works in any orientation, delete this property"
+    "OPTIONAL. Orientation can be locked to either portrait or landscape. If your app works in any orientation, delete this property"
   ]
 
-  "fullscreen": "Should the app be launched in full screne mode? Generally, the value should be: true",
+  "fullscreen": "REQUIRED. Should the app be launched in full screne mode? Generally, the value should be: true",
 
-  "permissions": {  // The minimum requirements fields map to here
+  "permissions - OPTIONAL. Erase section if unnecessary": {
 
-    "geolocation": {
-      "description": "Required for local leaderboards" 
-    }
+    "name of the web API your app requires": {
+      "description": "What’s the intent behind requesting the use of this API? For example: Required to schedule notifications" 
+    },
     
-    "audio": {
-      "description": "Required for delivering sounds"
-    }
-    
-    "web_payment" {
-      "description": "Required for in-app payments"
-    }
-    
-    "camera" {
-      "description": "Required for taking pictures of achievements"
+    "name of the second web API your app requires": {
+      "description": "What’s the intent behind requesting the use of this API? For example: Required for autocompletion in the share screen"
     }
 
   },

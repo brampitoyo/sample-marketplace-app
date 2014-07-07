@@ -1,51 +1,43 @@
 {
 
-  "support": { // New
-    "url": "http://support.puzzle.com/",
-    "email": "support@puzzle.com"
+  "support": {
+    "url": "REQUIRED. http://",
+    "email": "REQUIRED"
   },
       
-  "privacy_policy": "This is your privacy policy, 2000 characters maximum", // New
+  "privacy_policy": "REQUIRED. This is your privacy policy, 2000 characters maximum. Generate a privacy policy here: https://privacychoice.org/policymaker",
   
-  "price": "Your price tier goes here. Example: free, tier_1, tier_3. See instructions posted on README.md for more information",
+  "price": "REQUIRED. Your price tier. Example: free, tier_1, tier_3. See README.md for more information",
 
-  "availability": "Your app availability goes here. Example: global. See instructions posted on README.md for more information"
+  "availability": "REQUIRED. Your app availability goes here. Example: global. Example 2: mexico, argentina, spain. See README.md for more information"
 
-  "in_app": {
+  "in_app - OPTIONAL. Erase section if unnecessary": {
   
     "payment": "Is in-app payment available or not? The value should either be true or false",
     
     "products" {
     
-      "product_name_goes_here": {
-        "name": "If in-app payment is enabled, ",
-        "price": "tier1"
+      "product_name": {
+        "name": "Name of in-app product, 50 characters maximum",
+        "price": "Your price tier. Example: free, tier_1, tier_3. See README.md for more information"
       },
       
-      "life" {
-        "name": "Extra Lives",
-        "price": "tier2"
+      "product_name_2" {
+        "name": "Name of in-app product, 50 characters maximum",
+        "price": "Your price tier. Example: free, tier_1, tier_3. See README.md for more information"
       },
-      
-      "unicorn": {
-        "name": "Magical Unicorn",
-        "price": "tier3"
-      }
-      
+            
     }
     
   },
   
-  // Payment account - New section
-  
-  "bango": { // Register for an account here: http://bango.com/
-    "username": "john.doe",
-    "token": "ot9vob7char5ap3hyt6dov1wal4caic8i4dru3ok3cac2cat4e"
-  },
-  
-  "provider_name": { // Register for an account here: http://providername.com/
-    "username": "john.doe",
-    "token": "rark7yez8ju3wyk0jak3gav3hec6oij4riemth1ag7he7of6un"
+  "payment - OPTIONAL. Erase section if unnecessary" {
+
+    "bango": {
+      "username": "Get a username by registering for an account here: http://bango.com/",
+      "token": "Token will be given after completing registration"
+    }
+
   }
   
 }
