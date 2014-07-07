@@ -1,15 +1,15 @@
 {
 
   "support": {
-    "url": "REQUIRED. http://",
+    "url": "REQUIRED. Include http://",
     "email": "REQUIRED"
   },
       
   "privacy_policy": "REQUIRED. This is your privacy policy, 2000 characters maximum. Generate a privacy policy here: https://privacychoice.org/policymaker",
   
-  "price": "REQUIRED. Your price tier. Example: free, tier_1, tier_3. See README.md for more information",
+  "price": "REQUIRED. Your price tier. e.g. free, tier_1, tier_3. See README.md for more info",
 
-  "availability": "REQUIRED. Your app availability goes here. Example: global. Example 2: mexico, argentina, spain. See README.md for more information"
+  "availability": "REQUIRED. Your app availability goes here. Example: global. Example 2: mexico, argentina, spain. See README.md for more info"
 
   "in_app - OPTIONAL. Erase section if unnecessary": {
   
@@ -18,13 +18,13 @@
     "products" {
     
       "product_name": {
-        "name": "Name of in-app product, 50 characters maximum",
-        "price": "Your price tier. Example: free, tier_1, tier_3. See README.md for more information"
+        "name": "Name of first in-app product, 50 characters maximum",
+        "price": "Your price tier. e.g. free, tier_1, tier_3. See README.md for more info"
       },
       
       "product_name_2" {
-        "name": "Name of in-app product, 50 characters maximum",
-        "price": "Your price tier. Example: free, tier_1, tier_3. See README.md for more information"
+        "name": "Name of second in-app product, 50 characters maximum",
+        "price": "Your price tier. e.g. free, tier_1, tier_3. See README.md for more info"
       },
             
     }

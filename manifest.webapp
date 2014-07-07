@@ -3,44 +3,44 @@
   "name": "REQUIRED. App name; 11 characters will make sure that the app name will appear in full in the Firefox OS homescreen",
   
   "developer": {
-    "name": "REQUIRED. Developer name, 50 characters maximum",
-    "url": "REQUIRED. http://"
+    "name": "REQUIRED. 50 characters",
+    "url": "REQUIRED. Include http://"
   },
   
-  "description": "REQUIRED. App description, 500 characters maximum",
+  "description": "REQUIRED. App description, 500 characters",
   
   "release_notes": "OPTIONAL. Erase section if unnecessary"
   
-  "default_locale": "REQUIRED. What’s the default language that your app description is written in? Usually, you write in English, so the value is: en",
+  "default_locale": "REQUIRED. What’s the language code that your app description is written in? e.g. If you write in English, the code is en",
   
   "locales - OPTIONAL. Erase section if unnecessary.": {
 
-    "Locale code goes here. German: de, French: fr, Italian: it, and so on": {
-      "description": "Localized app description, 500 characters maximum"
+    "Language code. e.g. es, zh-cn, jp, pt-br": {
+      "description": "Localized app description, 500 characters"
       "release_notes": "OPTIONAL. Erase section if unnecessary"
     },
         
-    "Second locale code goes here": {
-      "description": "Localized app description, 500 characters maximum"
+    "Language code. e.g. es, zh-cn, jp, pt-br": {
+      "description": "Localized app description, 500 characters"
       "release_notes": "OPTIONAL. Erase section if unnecessary"
     },
         
   },
   
   "icons": {
-    "64":  "REQUIRED. Relative URL to 64x64 icon image file. For example: /assets/img/icon-64.png",
-    "128": "REQUIRED. Relative URL to 128x128 icon image file. For example: /assets/img/icon-128.png",
-    "256": "REQUIRED. Relative URL to 256x256 icon image file. For example: /assets/img/icon-256.png",
+    "64":  "REQUIRED. Relative URL to 64x64 icon image file. e.g. /assets/img/icon-64.png",
+    "128": "REQUIRED. Relative URL to 128x128 icon image file. e.g. /assets/img/icon-128.png",
+    "256": "REQUIRED. Relative URL to 256x256 icon image file. e.g. /assets/img/icon-256.png",
   }
 
   "installs_allowed_from": [
-    "REQUIRED. Replace this text with a URL where user is allowed to install your app. For example: https://marketplace.firefox.com",
+    "REQUIRED. Replace this text with a URL where user is allowed to install your app. e.g. https://marketplace.firefox.com",
     "OPTIONAL. More URLs may be added here if your app can be made available somewhere else."
   ],
 
   "version": "REQUIRED. App version number, for example: 1.0, 0.32, 2.5",
 
-  "launch_path": "REQUIRED. The path that is loaded when the app starts. For most apps, it’s: /index.html",
+  "launch_path": "REQUIRED. The path that is loaded when the app starts. Most apps uses /index.html",
 
   "orientation": [
     "OPTIONAL. Orientation can be locked to either portrait or landscape. If your app works in any orientation, delete this property"
@@ -51,11 +51,11 @@
   "permissions - OPTIONAL. Erase section if unnecessary": {
 
     "name of the web API your app requires": {
-      "description": "What’s the intent behind requesting the use of this API? For example: Required to schedule notifications" 
+      "description": "What’s the intent behind requesting the use of this API? e.g. Required to schedule notifications" 
     },
     
     "name of the second web API your app requires": {
-      "description": "What’s the intent behind requesting the use of this API? For example: Required for autocompletion in the share screen"
+      "description": "What’s the intent behind requesting the use of this API? e.g. Required for autocompletion in the share screen"
     }
 
   },
