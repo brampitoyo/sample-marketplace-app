@@ -1,14 +1,14 @@
-# Screenshots (and videos)
+# Get Started
 
-* To enable a screen size, create a folder with the appropriate name: either `/mobile`, `/tablet`, or `/desktop`
-* Once created, each folder must have a minimum of 3 image or video inside in order for it to be published on Firefox Marketplace
+1. Enable a screen size by creating a folder with the appropriate name: `/mobile`, `/tablet`, or `/desktop`. To get you started, `/mobile` is already created
+2. Put image and video files inside the appropriate folders. See below for quantity, dimensions, file format and sorting/ordering
 
 # `/mobile`
 
 ## Platform support
 
 * Once your app is made available for mobile, it will automatically support Firefox OS phone
-* Support for Android mobile is automatically disabled. To enable support for Android mobile, create a blank filename called `android.enable`
+* Support for Android mobile is automatically disabled. To enable support for Android mobile, rename the folder to `/mobile-android`
 
 ## Dimensions
 
@@ -21,7 +21,7 @@
 ## Platform support
 
 * Once your app is made available for tablet, it will automatically support Firefox OS tablet
-* Support for Android tablet is automatically disabled. To enable support for Android tablet, create a blank filename called `android.enable`
+* Support for Android tablet is automatically disabled. To enable support for Android tablet, rename the folder to `/tablet-android`
 
 ## Dimensions
 
@@ -68,7 +68,3 @@ Prefix each filename with a dot-separated number. The app landing page will foll
 ## Video
 
 WebM
-
-# References
-
-* [Images and video sizes and formatting](http://developer.mozilla.org/apps)
