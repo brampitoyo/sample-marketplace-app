@@ -1,0 +1,52 @@
+{
+
+  "name": "",
+  
+  "version": "",
+  
+  "developer": {
+    "name": "",
+    "url": ""
+  },
+  
+  "description": "",
+
+  "default_locale": "",
+  
+  "locales": {
+        
+  },
+  
+  "icons": {
+    "64":  "",
+    "128": "",
+    "256": "",
+  },
+
+  "launch_path": "/index.html",
+ 
+  "origin": ""
+
+  "installs_allowed_from": [ "https://marketplace.firefox.com" ],
+
+  "orientation": [ "portrait" ],
+
+  "fullscreen": "true",
+  
+  "chrome": { "navigation": false },
+
+  "type": "",
+  
+  "redirects": [ ],
+    
+  "messages": [ ],
+
+  "activities": { },
+
+  "permissions": { },
+  
+  "precompile": [ ],
+  
+  "csp": { },
+  
+}
