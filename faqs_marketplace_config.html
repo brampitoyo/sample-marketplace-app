@@ -9,6 +9,14 @@
 <h3>Is this the only way I can submit an app?</h3>
 <p>No, this is one of the ways to submit an app. We think it will be most useful to developers who prefer to work with files and/or at the command line.</p>
 
+<h3>Why use another file to contain Firefox Marketplace-specific fields?</h3>
+<p>Firefox Marketplace requires fields not present or irrelevant to other app stores, e.g., price tiers, ratings certificate, etc. So developers would create 2 files: 1) manifest file, and 2) config file. Here's why we're recommending 2 files:
+	<ul>
+		<li>A single file that includes all manifest+config fields is likely to increase failure rate.</li>
+		<li>With 2 files, MDN documentation can be split into 2 logical pages. This makes it easier for developers to browse/read/find what they're looking for.</li>
+		<li>Separating the files means the call to `navigator.mozApps.install` fetches an App Manifest that’s compact and contains no data unnecessary for installation.</li>
+	</ul>
+
 <h3>How do you declare a free app with in-app payment?</h3>
 <p>Set the value of the `price` field to `free`, and declare at least one product under `in_app_products`. The system will set the price tier to "tier 0" with in-app payments</p>
 
@@ -17,9 +25,7 @@
 <p>Ratings work similarly. You get your rating from IARC and include the values in the config file.</p>
 
 <h3>What will you do next?</h3>
-<p>After we've gotten your feedback, we're going to test this file with developers. Then we're going to design Devhub concepts that make use of this file, e.g., remote repo and dropoff service.</p>
-
-
+<p>After we've gotten your feedback, we're going to test this file with developers (can they successfully create a config file?). Then we're going to design Devhub concepts that make use of this file, e.g., remote repo and dropoff service. Concepts will include different ways to create these 2 files: manually and via GUI.</p>
 
 </body>
 
